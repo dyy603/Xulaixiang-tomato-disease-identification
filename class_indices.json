@@ -1,5 +1,6 @@
 {
-    "0": "Healthy",
-    "1": "Leaf blight",
-    "2": "Target spot"
+    "0": "Early_blight",
+    "1": "Healthy",
+    "2": "Leaf blight",
+    "3": "Target spot"
 }

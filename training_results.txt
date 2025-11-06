@@ -1,1 +1,0 @@
-Epoch, Train loss, Validation Accuracy, Test Accuracy,test_accurate

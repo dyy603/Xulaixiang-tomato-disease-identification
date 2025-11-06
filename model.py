@@ -6,7 +6,7 @@ from mla import ImageMLA
 
 
 class AlexNet(nn.Module):
-    def __init__(self, num_classes=4, init_weights=False):
+    def __init__(self, num_classes=5, init_weights=False):
         super().__init__()
 
         # 特征提取层（MSA与MLA协同工作）
@@ -47,7 +47,7 @@ class AlexNet(nn.Module):
 
         self.classifier = nn.Sequential(
             nn.Dropout(0.5),
-            nn.Linear(128 * 6 * 6, 2048),
+            nn.Linear(128 * 4 * 4, 2048),
             nn.ReLU(inplace=True),
             nn.Dropout(0.5),
             nn.Linear(2048, 2048),
