@@ -1,7 +1,80 @@
-# Xulaixiang-tomato-disease-identification
-本文提出一种基于改进AlexNet与融合多头注意力和早停机制的深度学习番茄叶片病虫害识别模型。
-首先，优化AlexNet结构，增强特征提取的深度。
-其次，融合多头注意力机制，增强全局特征建模能力。
-最后，引入早停机制，提升模型的分类性能。
-实验结果表明：本文提出方法的病害识别精度最高达99.47%
-数据可通过百度网盘链接: https://pan.baidu.com/s/1Q3rgLQvhX9-p05pSMu9L9g?pwd=aunt 提取码: aunt 获取。
+# Tomato Leaf Disease Identification System
+The tomato leaf disease recognition system based on improved AlexNet achieves automatic classification and recognition of leaf diseases through deep learning technology.
+# Project Overview 
+This project aims to use deep learning technology to construct an efficient tomato leaf disease recognition model. By utilizing an improved AlexNet network architecture combined with attention mechanisms (multi head self attention mechanism and multi head late attention mechanism), automatic recognition of common tomato leaf diseases is achieved, providing support for early detection and diagnosis of diseases in agricultural production.
+# Project Structure
+```
+MLSA/
+├── MLSA.pth                   # weight file
+├── MLSA_train.py              # Main script for model training
+├── model.py                   # Definition of the improved AlexNet model
+├── mla.py                     # Implementation of the MLA attention mechanism
+├── msa.py                     # Implementation of the MSA attention mechanism
+├── predict.py                 # Model prediction script
+├── Preprocess_dehanced.py     # data processing
+├── inference.py               # Model inference script
+└── fanqie/
+    ├── fanqie data/           # Total data
+    ├── train/                 # Training set
+    ├── val/                   # Validation set
+    └── test/                  # Test set
+```
+# Core Technologies 
+__1.Improved AlexNet__：Add a layer of convolution to enhance the depth of feature extraction.  
+__2.Integrate Attention Mechanisms：__
+  multi head self attention mechanism and multi head late attention mechanism  
+  __3.The early stop mechanism__: Terminate training prematurely when validation set performance stops improving
+# Recommended Environment
+Python 3.12  
+PyTorch == 2.3
+# Dataset acquisition and structure
+The data can be accessed through the Baidu Cloud link:https://pan.baidu.com/s/1Q3rgLQvhX9-p05pSMu9L9g?pwd=aunt  
+The dataset should be organized in the following structure:
+```
+fanqie
+├── fanqie data/ 
+│   ├── class1/
+│   ├── class2/
+│   └── ...
+├── train/
+│   ├── class1/
+│   ├── class2/
+│   └── ...
+├── val/
+├── class1/
+│   ├── class2/
+│   └── ...
+├── test/
+├── class1/
+│   ├── class2/
+│   └── ...
+```
+Each category folder contains tomato leaf images corresponding to that category.
+# Model Training 
+Use the __MLSA_train.py__ script for model training:
+```
+python MLSA_train.py
+```
+# Training Parameter Description
+During the training process, model weights will be automatically saved. After training, the model performance will be evaluated on the test set.
+| Initial learning rate | Epoch| Batch size | 
+|:------|:----:|-------:|
+|0.0001 | 100  | 64   |  
+
+# Performance Evaluation
+After the training is completed, the model will be evaluated on the test set, and key metrics such as accuracy will be output. 
+# References and contact information
+The paper is in the submission stage and will update the BiBTeX citation format after its official publication. Currently, it can be temporarily cited:
+```
+@article{tssc_pea_disease,  
+  title={MLSA: A Multi-Head Latent and Self-Attention Deep Learning Network for Tomato Leaf Disease Identification },  
+  author={[Author's name, to be added when published]},  
+  journal={[Journal name, to be supplemented after acceptance]},  
+  year={2025},  
+  note={Manuscript submitted for publication}  
+}  
+```
+# Contact Information
+If you encounter code running issues or academic exchange needs, please contact:  
+Email:dongyanyanhuuc@yeah.net  
+GitHub Issue：Submit an issue directly in this warehouse
