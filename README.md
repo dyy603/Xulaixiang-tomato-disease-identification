@@ -51,7 +51,7 @@ fanqie
 ```
 Each category folder contains tomato leaf images corresponding to that category.
 # Model Training 
-Use the __MLSA_train.py__ script for model training:
+Use the `MLSA_train.py` script for model training:
 ```
 python MLSA_train.py
 ```
