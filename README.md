@@ -41,11 +41,11 @@ fanqie
 │   ├── class2/
 │   └── ...
 ├── val/
-├── class1/
+├── ├──class1/
 │   ├── class2/
 │   └── ...
 ├── test/
-├── class1/
+├── ├──class1/
 │   ├── class2/
 │   └── ...
 ```
@@ -60,7 +60,16 @@ During the training process, model weights will be automatically saved. After tr
 | Initial learning rate | Epoch| Batch size | 
 |:------|:----:|-------:|
 |0.0001 | 100  | 64   |  
-
+# Model Inference
+Use the provided inference script to make predictions on new images:  
+__Single Image Prediction__  
+```
+python inference.py --model_path ./MLSA.pth --image_path ./test.jpg
+```
+__Batch Image Prediction__  
+```
+python inference.py --model_path ./MLSA.pth --image_dir ./test_images
+```
 # Performance Evaluation
 After the training is completed, the model will be evaluated on the test set, and key metrics such as accuracy will be output. 
 # References and contact information
