@@ -14,10 +14,6 @@ MLSA/
 ├── Preprocess_dehanced.py     # data processing
 ├── inference.py               # Model inference script
 └── fanqie/
-    ├── fanqie data/           # Total data
-    ├── train/                 # Training set
-    ├── val/                   # Validation set
-    └── test/                  # Test set
 ```
 # Core Technologies 
 __1.Improved AlexNet__：Add a layer of convolution to enhance the depth of feature extraction.  
@@ -28,7 +24,7 @@ __2.Integrate Attention Mechanisms：__
 Python 3.12  
 PyTorch == 2.3
 # Dataset acquisition and structure
-The data can be accessed through the Baidu Cloud link:https://pan.baidu.com/s/1Q3rgLQvhX9-p05pSMu9L9g?pwd=aunt  
+The data can be accessed through the Baidu Cloud link:https://pan.baidu.com/s/1Q3rgLQvhX9-p05pSMu9L9g?
 The dataset should be organized in the following structure:
 ```
 fanqie
