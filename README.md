@@ -13,7 +13,6 @@ MLSA/
 ├── predict.py                 # Model prediction script
 ├── Preprocess_dehanced.py     # data processing
 ├── inference.py               # Model inference script
-└── fanqie/
 ```
 # Core Technologies 
 __1.Improved AlexNet__：Add a layer of convolution to enhance the depth of feature extraction.  
